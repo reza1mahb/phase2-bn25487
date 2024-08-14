@@ -1,6 +1,6 @@
 FROM rust:slim as builder
 RUN apt-get update && \
-    apt-get install -y pkg-config libssl-dev && \
+    apt-get install -y pkg-config libssl-dev && \545
     rm -rf /var/lib/apt/lists/*
 WORKDIR /build
 COPY . .
